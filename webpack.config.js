@@ -1,13 +1,11 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   // Входной файл
-  entry: [
-    './src/js/index.js'
-  ],
+  entry: ['./src/js/index.js'],
 
   // Выходной файл
   output: {
@@ -15,7 +13,7 @@ module.exports = {
   },
 
   // Source maps для удобства отладки
-  devtool: "source-map",
+  devtool: 'source-map',
 
   module: {
     rules: [
@@ -27,7 +25,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env'],
+            presets: ['@babel/preset-env']
           }
         }
       },
@@ -39,8 +37,8 @@ module.exports = {
           MiniCssExtractPlugin.loader, // Extract css to separate file
           'css-loader', // translates CSS into CommonJS
           'postcss-loader', // parse CSS and add vendor prefixes to CSS rules
-          'sass-loader', // compiles Sass to CSS, using Node Sass by default
-        ],
+          'sass-loader' // compiles Sass to CSS, using Node Sass by default
+        ]
       },
 
       // Подключаем шрифты из css
@@ -49,20 +47,31 @@ module.exports = {
         use: [
           {
             loader: 'file-loader?name=./fonts/[name].[ext]'
-          },
+          }
         ]
       },
 
       // Подключаем картинки из css
+      // {
+      //   test: /\.(svg|png|jpg|jpeg|webp)$/,
+      //   use: [
+      //     {
+      //       loader: 'file-loader?name=./static/[name].[ext]'
+      //     },
+      //   ]
+      // },
       {
-        test: /\.(svg|png|jpg|jpeg|webp)$/,
+        test: /\.(png|jpg|jpeg|gif|svg)$/,
         use: [
           {
-            loader: 'file-loader?name=./static/[name].[ext]'
-          },
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]'
+            }
+          }
         ]
-      },
-    ],
+      }
+    ]
   },
   plugins: [
     // Подключаем файл html, стили и скрипты встроятся автоматически
@@ -72,21 +81,21 @@ module.exports = {
       inject: true,
       minify: {
         removeComments: true,
-        collapseWhitespace: false,
+        collapseWhitespace: false
       }
     }),
 
     // Кладем стили в отдельный файлик
     new MiniCssExtractPlugin({
-      filename: 'style.css',
+      filename: 'style.css'
     }),
 
     // Копируем картинки
     new CopyWebpackPlugin([
       {
         from: './src/img',
-        to: 'img',
-      },
+        to: 'img'
+      }
     ])
-  ],
-};
+  ]
+}
