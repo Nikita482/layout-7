@@ -248,5 +248,48 @@ body {
   .topbar__header {
     display: none; } }
 
+.info {
+  display: block; }
+  @media (min-width: 768px) {
+    .info {
+      display: flex;
+      margin-top: 32px; } }
+  .info__text {
+    width: 100%;
+    height: auto;
+    padding: 24px 16px 0 16px;
+    box-sizing: border-box; }
+  @media (min-width: 768px) {
+    .info .info__text {
+      padding: 0 16px; } }
+  .info__description {
+    max-height: 180px;
+    height: 90px;
+    height: auto;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+    overflow: hidden; }
+  .info__second {
+    display: none;
+    margin-top: 16px; }
+  .info__read {
+    width: auto;
+    height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1b1c21;
+    border: none;
+    background-color: transparent;
+    margin: 16px 0;
+    display: flex;
+    align-items: center; }
+  .info__icon {
+    margin-right: 10px; }
+  .info__logo {
+    width: 100vw; }
+
 
 /*# sourceMappingURL=style.css.map*/
