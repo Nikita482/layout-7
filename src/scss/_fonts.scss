@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Comic';
+  src: url('../fonts/comic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
 body {
   font-family: Comic, sans-serif;
 }
