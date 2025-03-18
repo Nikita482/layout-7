@@ -25,7 +25,7 @@
 
         <button class="header__btn header__btn--tablet" style="background-image: url(img/header/phone.png)"></button>
 
-        <button class="header__btn header__btn--tablet">
+        <button class="header__btn header__btn--tablet" id="openMessage">
           <i class="fas fa-comment header__message"></i>
         </button>
 
@@ -162,7 +162,7 @@
 
     <section class="message" id="messageFog">
       <div class="message-box" id="messageBox">
-        <button class="message__btn" id="closeMessage">
+        <button class="message__btn message__btn--mobul" id="closeMessage">
           <ion-icon class="message--icon" name="close"></ion-icon>
         </button>
 
@@ -186,10 +186,14 @@
         <div class="message__box-submit">
           <button class="message__submit">
             ОТПРАВИТЬ
-            <span class="message__arrow"></span>
+            <ion-icon class="message__arrow" name="arrow-dropright"></ion-icon>
           </button>
         </div>
       </div>
+
+      <button class="message__btn message__btn--desktop" id="closeMessageDesktop">
+        <ion-icon class="message--icon" name="close"></ion-icon>
+      </button>
     </section>
 
     <div style="width: 100vw; height: 1000px"> </div>

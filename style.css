@@ -469,9 +469,10 @@ body {
     background-color: white;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -320px;
     transition-duration: 300ms;
     pointer-events: auto;
+    overflow-y: auto;
     box-shadow: -16px 0px 52px 0px rgba(14, 24, 80, 0.2); }
   .message__btn {
     width: 40px;
@@ -485,6 +486,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     margin: 24px 0 0 16px; }
+  .message__btn--desktop {
+    display: none; }
   .message--icon {
     color: white;
     font-size: 30px;
@@ -492,8 +495,7 @@ body {
   .message__box-name {
     display: flex;
     align-items: center;
-    margin-top: 40px;
-    margin-bottom: 24px; }
+    margin: 40px 0 24px 0; }
   .message__line {
     width: 4px;
     height: 40px;
@@ -548,10 +550,32 @@ body {
   .message__arrow {
     width: 30px;
     height: 30px;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px; }
+
+@media (min-width: 1440px) {
+  .message__btn--mobul {
+    display: none; }
+  .message__btn--desktop {
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    background-color: #ff3e79;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-repeat: no-repeat;
-    background-image: url("/public/img/message/arrow.png");
-    background-position: center; }
+    background-position: center;
+    position: absolute;
+    right: 352px;
+    opacity: 0;
+    pointer-events: none;
+    transition-duration: 300ms; }
+  .message__box-name {
+    margin: 25px 0 24px 0; } }
 
 
 /*# sourceMappingURL=style.css.map*/
