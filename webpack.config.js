@@ -52,22 +52,11 @@ module.exports = {
       },
 
       // Подключаем картинки из css
-      // {
-      //   test: /\.(svg|png|jpg|jpeg|webp)$/,
-      //   use: [
-      //     {
-      //       loader: 'file-loader?name=./static/[name].[ext]'
-      //     },
-      //   ]
-      // },
       {
-        test: /\.(png|jpg|jpeg|gif|svg)$/,
+        test: /\.(svg|png|jpg|jpeg|webp)$/,
         use: [
           {
-            loader: 'file-loader',
-            options: {
-              name: '[path][name].[ext]'
-            }
+            loader: 'file-loader?name=./static/[name].[ext]'
           }
         ]
       }
