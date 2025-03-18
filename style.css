@@ -317,7 +317,8 @@ body {
     align-items: center;
     box-sizing: border-box;
     padding: 0 16px;
-    position: relative; }
+    position: relative;
+    background-color: red; }
     .menu__header .menu__btn {
       width: 40px;
       aspect-ratio: 1 / 1;
