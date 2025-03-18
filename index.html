@@ -23,7 +23,7 @@
           <h1 class="header__name">Услуги и сервисы</h1>
         </section>
 
-        <button class="header__btn header__btn--tablet" style="background-image: url(img/header/phone.png)"></button>
+        <button class="header__btn header__btn--tablet" id="openPhone" style="background-image: url(img/header/phone.png)"></button>
 
         <button class="header__btn header__btn--tablet" id="openMessage">
           <i class="fas fa-comment header__message"></i>
@@ -139,7 +139,7 @@
         </nav>
 
         <div class="menu__details">
-          <button class="menu__btn menu__btn-margin" style="background-image: url(img/header/phone.png)"></button>
+          <button class="menu__btn menu__btn-margin" id="phone" style="background-image: url(img/header/phone.png)"></button>
 
           <button class="menu__btn menu__btn-margin" id="message">
             <i class="fas fa-comment header__message"></i>
@@ -193,6 +193,39 @@
 
       <button class="message__btn message__btn--desktop" id="closeMessageDesktop">
         <ion-icon class="message--icon" name="close"></ion-icon>
+      </button>
+    </section>
+
+    <section class="phone" id="phoneFog">
+      <div class="phone-box" id="phoneBox">
+        <button class="phone__btn phone__btn--mobul" id="closePhone">
+          <ion-icon class="phone--icon" name="close"></ion-icon>
+        </button>
+
+        <section class="phone__box-name">
+          <span class="phone__line"></span>
+          <h2 class="phone__name">Заказать звонок</h2>
+        </section>
+
+        <input class="phone__pole" type="tel" name="tel" placeholder="Телефон">
+
+        <p class="phone__consent">
+          Нажимая “отправить”, вы даете согласие на
+          <span class="phone__color">обработку персональных данных</span> и
+          соглашаетесь с нашей
+          <span class="phone__color">политикой конфиденциальности</span>
+        </p>
+
+        <div class="phone__box-submit">
+          <button class="phone__submit">
+            ОТПРАВИТЬ
+            <ion-icon class="phone__arrow" name="arrow-dropright"></ion-icon>
+          </button>
+        </div>
+      </div>
+
+      <button class="phone__btn phone__btn--desktop" id="closePhoneDesktop">
+        <ion-icon class="phone--icon" name="close"></ion-icon>
       </button>
     </section>
 
