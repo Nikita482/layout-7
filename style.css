@@ -334,7 +334,8 @@ body {
       margin-left: 16px; }
     .menu__header .menu--search {
       position: absolute;
-      right: 16px; }
+      right: 16px;
+      background-image: url("/img/menu/search.png"); }
 
 
 /*# sourceMappingURL=style.css.map*/
