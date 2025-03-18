@@ -1,0 +1,121 @@
+@import 'mixins';
+@import 'variables';
+
+.message {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0);
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  transition-duration: 300ms;
+
+  &-box {
+    width: 320px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 0;
+    right: 0;
+    // right: -320px;
+    transition-duration: 300ms;
+    pointer-events: auto;
+    box-shadow: -16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+  }
+
+  &__btn {
+    @include btn-nav;
+    margin: 24px 0 0 16px;
+  }
+
+  &--icon {
+    color: white;
+    font-size: 30px;
+    pointer-events: none;
+  }
+
+  &__box-name {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 24px;
+  }
+
+  &__line {
+    width: 4px;
+    height: 40px;
+    background-color: #41f6d7;
+    transform: rotate(-180deg);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-right: 12px;
+  }
+
+  &__name {
+    color: #1b1c21;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+  }
+
+  &__pole {
+    width: 288px;
+    padding: 12px 0 12px 16px;
+    display: block;
+    margin: 0 auto 16px;
+    border: 1px solid rgba(234, 234, 234, 1);
+    border-radius: 8px;
+  }
+
+  &--text {
+    padding: 12px 0 82px 16px;
+  }
+
+  &__pole:focus {
+    outline: none;
+    border: 1px solid rgba(65, 246, 215, 1);
+  }
+
+  &__consent {
+    padding: 0 16px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+  }
+
+  &__color {
+    color: $highlight;
+  }
+
+  &__box-submit {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 16px;
+    height: auto;
+    margin-top: 19px;
+    display: flex;
+    justify-content: end;
+  }
+
+  &__submit {
+    width: 136px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: $highlight;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__arrow {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url('/public/img/message/arrow.png');
+    background-position: center;
+  }
+}

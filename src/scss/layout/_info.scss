@@ -75,9 +75,26 @@
     width: 100vw;
   }
 
+  @media (min-width: 768px) {
+    .info__logo {
+      margin-right: 16px;
+    }
+  }
+
   @media (min-width: 1120px) {
     .info__logo {
       width: 60vw;
     }
+  }
+}
+
+@media (min-width: 1120px) {
+  .info {
+    width: calc(100vw - 320px);
+    margin-left: 320px;
+  }
+
+  .info__logo {
+    width: 70vw !important;
   }
 }

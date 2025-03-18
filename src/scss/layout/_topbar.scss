@@ -80,6 +80,9 @@
   }
 }
 
-// @media (min-width: 1440px) {
-
-// }
+@media (min-width: 1120px) {
+  .topbar {
+    width: calc(100vw - 320px);
+    margin-left: 320px;
+  }
+}

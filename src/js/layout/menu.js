@@ -1,22 +1,30 @@
-const menuFor = document.getElementById('menuFor')
+const menuFog = document.getElementById('menuFog')
+const menuBox = document.getElementById('menuBox')
 
 export function menu() {
   document.getElementById('menu').addEventListener('click', () => {
     const menuBox = document.getElementById('menuBox')
     menuBox.style.left = 0
-    menuFor.style.backgroundColor = 'rgba(255, 255, 255, 0.8)'
-    menuFor.style.pointerEvents = 'auto'
+    menuFog.style.backgroundColor = 'rgba(255, 255, 255, 0.8)'
+    menuFog.style.pointerEvents = 'auto'
   })
 }
 
 export function closeMenu() {
   document.getElementById('closeMenu').addEventListener('click', () => {
-    const menuBox = document.getElementById('menuBox')
     menuBox.style.left = '-360px'
-    menuFor.style.backgroundColor = 'rgba(255, 255, 255, 0)'
-    menuFor.style.pointerEvents = 'none'
+    menuFog.style.backgroundColor = 'rgba(255, 255, 255, 0)'
+    menuFog.style.pointerEvents = 'none'
   })
 }
+
+menuFog.addEventListener('click', (event) => {
+  if (event.target === menuFog) {
+    menuBox.style.left = '-360px'
+    menuFog.style.pointerEvents = 'none'
+    menuFog.style.backgroundColor = 'rgba(255, 255, 255, 0)'
+  }
+})
 
 export function lang() {
   const langRU = document.getElementById('langRU')

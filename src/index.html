@@ -117,10 +117,10 @@
       <img class="info__logo" src="img/info/logo.png" alt="logo" />
     </section>
 
-    <section class="menu" id="menuFor">
+    <section class="menu" id="menuFog">
       <div class="menu-box" id="menuBox">
         <header class="menu__header">
-          <button class="menu__btn" id="closeMenu">
+          <button class="menu__btn menu--close" id="closeMenu">
             <ion-icon class="menu--icon" name="close"></ion-icon>
           </button>
 
@@ -139,7 +139,7 @@
         <nav>
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link" autofocus href="#">Ремонт техники</a>
+              <a class="menu__link" href="#">Ремонт техники</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#">Услуги и сервисы</a>
@@ -171,7 +171,7 @@
             style="background-image: url(img/header/phone.png)"
           ></button>
 
-          <button class="menu__btn menu__btn-margin">
+          <button class="menu__btn menu__btn-margin" id="message">
             <i class="fas fa-comment header__message"></i>
           </button>
 
@@ -190,6 +190,57 @@
           <button class="menu__lang-btn" id="langEN">EN</button>
           <button class="menu__lang-btn" id="langCH">CH</button>
         </section>
+      </div>
+    </section>
+
+    <section class="message" id="messageFog">
+      <div class="message-box" id="messageBox">
+        <button class="message__btn" id="closeMessage">
+          <ion-icon class="message--icon" name="close"></ion-icon>
+        </button>
+
+        <section class="message__box-name">
+          <span class="message__line"></span>
+          <h2 class="message__name">Услуги и сервисы</h2>
+        </section>
+
+        <input
+          class="message__pole"
+          type="text"
+          name="name"
+          placeholder="Имя"
+        />
+        <input
+          class="message__pole"
+          type="tel"
+          name="tel"
+          placeholder="Телефон"
+        />
+        <input
+          class="message__pole"
+          type="email"
+          name="email"
+          placeholder="Электронная почта"
+        />
+        <textarea
+          class="message__pole message--text"
+          name="sms"
+          placeholder="Сообщение"
+        ></textarea>
+
+        <p class="message__consent">
+          Нажимая “отправить”, вы даете согласие на
+          <span class="message__color">обработку персональных данных</span> и
+          соглашаетесь с нашей
+          <span class="message__color">политикой конфиденциальности</span>
+        </p>
+
+        <div class="message__box-submit">
+          <button class="message__submit">
+            ОТПРАВИТЬ
+            <span class="message__arrow"></span>
+          </button>
+        </div>
       </div>
     </section>
 

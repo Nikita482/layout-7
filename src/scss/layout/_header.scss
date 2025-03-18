@@ -255,3 +255,10 @@ $bg-line: #eaeaea;
     display: none;
   }
 }
+
+@media (min-width: 1120px) {
+  .header {
+    width: calc(100vw - 320px);
+    margin-left: 320px;
+  }
+}

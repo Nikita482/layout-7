@@ -3,8 +3,10 @@ import { info } from './layout/info'
 import { menu } from './layout/menu'
 import { closeMenu } from './layout/menu'
 import { lang } from './layout/menu'
+import { message } from './layout/messageEvents'
 
 info()
 menu()
 closeMenu()
 lang()
+message()
