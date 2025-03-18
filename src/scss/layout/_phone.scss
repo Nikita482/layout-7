@@ -1,7 +1,6 @@
-@import 'mixins';
 @import 'variables';
 
-.message {
+.phone {
   width: 100vw;
   height: 100vh;
   background-color: rgba(255, 255, 255, 0);
@@ -16,6 +15,7 @@
     background-color: rgba(255, 255, 255, 1);
     position: fixed;
     top: 0;
+    right: 0;
     right: -450px;
     transition-duration: 300ms;
     pointer-events: auto;
@@ -26,10 +26,6 @@
   &__btn {
     @include btn-nav;
     margin: 24px 0 0 16px;
-  }
-
-  &__btn--desktop {
-    display: none;
   }
 
   &--icon {
@@ -68,10 +64,6 @@
     margin: 0 auto 16px;
     border: 1px solid rgba(234, 234, 234, 1);
     border-radius: 8px;
-  }
-
-  &--text {
-    padding: 12px 0 82px 16px;
   }
 
   &__pole:focus {
@@ -121,14 +113,18 @@
     align-items: center;
     font-size: 30px;
   }
+
+  &__btn--desktop {
+    display: none;
+  }
 }
 
 @media (min-width: 1440px) {
-  .message__btn--mobul {
+  .phone__btn--mobul {
     display: none;
   }
 
-  .message__btn--desktop {
+  .phone__btn--desktop {
     width: 40px;
     aspect-ratio: 1 / 1;
     background-color: #ff3e79;
@@ -145,11 +141,10 @@
     pointer-events: none;
     transition-duration: 300ms;
   }
-  .message__box-name {
+  .phone__box-name {
     margin: 25px 0 24px 0;
   }
-
-  .message-box {
+  .phone-box {
     width: 440px;
   }
 }
