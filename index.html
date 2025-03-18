@@ -95,45 +95,69 @@
       <img class="info__logo" src="img/info/logo.png" alt="logo">
     </section>
 
-    <section class="menu" id="menuBox">
-      <header class="menu__header">
-        <button class="menu__btn" style="background-image: url(/img/menu/close.png)"></button>
+    <section class="menu" id="menuFor">
+      <div class="menu-box" id="menuBox">
+        <header class="menu__header">
+          <button class="menu__btn" id="closeMenu">
+            <ion-icon class="menu--icon" name="close"></ion-icon>
+          </button>
 
-        <img id="logo" class="menu__logo" src="img/header/logo.png" alt="logo">
+          <img id="logo" class="menu__logo" src="img/header/logo.png" alt="logo">
 
-        <button class="menu__btn" style="background-image: url(public/img/header/icon.png)"></button>
-        <button class="menu__btn" style="background-image: url(/img/header/icon.png)"></button>
-        
-      </header>
+          <button class="menu__btn menu--search">
+            <ion-icon class="menu--icon" name="search"></ion-icon>
+          </button>
+        </header>
 
-      <nav>
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link" autofocus href="#">Ремонт техники</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Услуги и сервисы</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Корпоративным клиентам</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Продавцам техники</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Партнерам</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Производителям</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Наши сервисные центры</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+        <nav>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" autofocus href="#">Ремонт техники</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Услуги и сервисы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Корпоративным клиентам</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Продавцам техники</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Партнерам</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Производителям</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Наши сервисные центры</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="menu__details">
+          <button class="menu__btn menu__btn-margin" style="background-image: url(img/header/phone.png)"></button>
+
+          <button class="menu__btn menu__btn-margin">
+            <i class="fas fa-comment header__message"></i>
+          </button>
+
+          <button class="menu__btn menu__btn-margin" style="background-image: url(img/header/user.png)"></button>
+        </div>
+
+        <p class="menu__contact">mail@cps.com</p>
+
+        <h3 class="menu__contact">8 800 890 8900</h3>
+
+        <section class="menu__lang">
+          <button class="menu__lang-btn" id="langRU">RU</button>
+          <button class="menu__lang-btn" id="langEN">EN</button>
+          <button class="menu__lang-btn" id="langCH">CH</button>
+        </section>
+      </div>
     </section>
 
     <div style="width: 100vw; height: 1000px"> </div>
