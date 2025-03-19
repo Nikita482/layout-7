@@ -713,7 +713,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
-    background-color: white;
+    background: linear-gradient(to right, #f8f8f8, white);
     color: #7e7e82;
     padding: 16px;
     box-sizing: border-box;
@@ -755,7 +755,7 @@ body {
     color: #1b1c21; }
 
 @media (min-width: 768px) {
-  .swiper-wrapper {
+  .brands__wrapper {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px; }
@@ -773,7 +773,7 @@ body {
   .brands {
     width: calc(100vw - 320px);
     margin-left: 320px; }
-  .swiper-wrapper {
+  .brands__wrapper {
     grid-template-columns: repeat(4, 1fr); }
   .swiper-slide:nth-child(7),
   .swiper-slide:nth-child(8) {
@@ -788,7 +788,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
-    background-color: white;
+    background: linear-gradient(to right, #f8f8f8, white);
     color: #7e7e82;
     padding: 16px;
     box-sizing: border-box;
@@ -826,7 +826,7 @@ body {
     color: #1b1c21; }
 
 @media (min-width: 768px) {
-  .swiper-wrapper {
+  .repair__wrapper {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px; }
@@ -844,11 +844,123 @@ body {
   .repair {
     width: calc(100vw - 320px);
     margin-left: 320px; }
-  .swiper-wrapper {
+  .repair__wrapper {
     grid-template-columns: repeat(4, 1fr); }
   .repair__slide:nth-child(7),
   .repair__slide:nth-child(8) {
     display: flex; } }
+
+.price {
+  width: 100vw;
+  height: auto; }
+  .price__name {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    background: linear-gradient(to right, #f8f8f8, white);
+    color: #7e7e82;
+    padding: 16px;
+    box-sizing: border-box;
+    border-top: 1px solid #d9fff5; }
+  .price__swiper {
+    overflow: hidden;
+    position: relative;
+    padding: 16px 16px 32px;
+    box-sizing: border-box; }
+    @media (min-width: 768px) {
+      .price__swiper {
+        padding: 0; } }
+  .price__slide {
+    height: auto !important;
+    border-radius: 6px;
+    border: 1px solid #eaeaea;
+    background-color: white;
+    padding: 16px;
+    box-sizing: border-box;
+    position: relative; }
+    @media (min-width: 768px) {
+      .price__slide {
+        display: flex;
+        align-items: center;
+        width: calc(100vw - 32px) !important;
+        margin: 0 16px; } }
+  .price__item {
+    color: #1b1c21; }
+    @media (min-width: 768px) {
+      .price__item {
+        display: flex;
+        align-items: center; } }
+  .price__text, .price__cost, .price__time {
+    opacity: 0.72;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px; }
+  .price__highlight {
+    color: #7e7e82; }
+    @media (min-width: 768px) {
+      .price__highlight {
+        display: none; } }
+  .price .price__margin {
+    margin-top: 16px; }
+    @media (min-width: 768px) {
+      .price .price__margin {
+        margin: 0; } }
+  .price__submit {
+    width: 100px;
+    height: 28px;
+    border-radius: 16px;
+    background-color: #ff3e79;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 16px;
+    bottom: 16px; }
+    @media (max-width: 768px) {
+      .price__submit {
+        top: 50%;
+        transform: translateY(-50%); } }
+    .price__submit .price__title {
+      display: none !important; }
+  .price__arrow {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px; }
+
+@media (min-width: 768px) {
+  .price__wrapper {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr); }
+  .price--size1 {
+    width: 50%;
+    min-width: 380px; }
+  .price--size2 {
+    width: 20%; }
+  .price--size3 {
+    width: 30%; }
+  .price__title {
+    width: calc(100vw - 32px);
+    margin: 0 16px;
+    display: flex;
+    color: #7e7e82;
+    display: flex;
+    align-items: center; }
+  .price__service {
+    width: 50%;
+    min-width: 380px;
+    margin-left: 16px; }
+  .price__rate {
+    width: 20%; }
+  .price__duration {
+    width: 30%; } }
 
 
 /*# sourceMappingURL=style.css.map*/
