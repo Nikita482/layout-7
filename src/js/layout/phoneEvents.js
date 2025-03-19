@@ -6,11 +6,14 @@ const phoneFog = document.getElementById('phoneFog')
 
 const btnDesktop = document.getElementById('closePhoneDesktop')
 
+const body = document.body
+
 export function phoneEvents() {
   document.getElementById('phone').addEventListener('click', () => {
     menuBox.style.left = '-450px'
     menuFog.style.backgroundColor = 'rgba(255, 255, 255, 0)'
     menuFog.style.pointerEvents = 'none'
+    body.style.overflow = 'hidden'
 
     setTimeout(() => {
       phoneBox.style.right = 0
@@ -23,6 +26,7 @@ export function phoneEvents() {
     phoneBox.style.right = '-450px'
     phoneFog.style.backgroundColor = 'rgba(255, 255, 255, 0)'
     phoneFog.style.pointerEvents = 'none'
+    body.style.overflow = 'auto'
   })
 
   phoneFog.addEventListener('click', (event) => {
@@ -31,6 +35,7 @@ export function phoneEvents() {
       phoneFog.style.backgroundColor = 'rgba(255, 255, 255, 0)'
       phoneFog.style.pointerEvents = 'none'
       btnDesktop.style.opacity = 0
+      body.style.overflow = 'auto'
     }
   })
 }
@@ -39,6 +44,7 @@ document.getElementById('openPhone').addEventListener('click', () => {
   phoneFog.style.backgroundColor = 'rgba(255, 255, 255, 0.8)'
   phoneFog.style.pointerEvents = 'auto'
   phoneBox.style.right = 0
+  body.style.overflow = 'hidden'
 })
 
 btnDesktop.addEventListener('click', () => {

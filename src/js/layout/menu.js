@@ -1,5 +1,6 @@
 const menuFog = document.getElementById('menuFog')
 const menuBox = document.getElementById('menuBox')
+const body = document.body
 
 export function menu() {
   document.getElementById('menu').addEventListener('click', () => {
@@ -7,6 +8,7 @@ export function menu() {
     menuBox.style.left = 0
     menuFog.style.backgroundColor = 'rgba(255, 255, 255, 0.8)'
     menuFog.style.pointerEvents = 'auto'
+    body.style.overflow = 'hidden'
   })
 }
 
@@ -15,6 +17,7 @@ export function closeMenu() {
     menuBox.style.left = '-360px'
     menuFog.style.backgroundColor = 'rgba(255, 255, 255, 0)'
     menuFog.style.pointerEvents = 'none'
+    body.style.overflow = 'auto'
   })
 }
 
@@ -23,6 +26,7 @@ menuFog.addEventListener('click', (event) => {
     menuBox.style.left = '-360px'
     menuFog.style.pointerEvents = 'none'
     menuFog.style.backgroundColor = 'rgba(255, 255, 255, 0)'
+    body.style.overflow = 'auto'
   }
 })
 
