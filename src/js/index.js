@@ -7,6 +7,7 @@ import { message } from './layout/messageEvents'
 import { phoneEvents } from './layout/phoneEvents'
 import { brands } from './layout/brands'
 import { repair } from './layout/repair'
+import { price } from './layout/price'
 
 info()
 menu()
@@ -16,3 +17,4 @@ message()
 phoneEvents()
 brands()
 repair()
+price()

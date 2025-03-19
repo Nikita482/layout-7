@@ -1,18 +1,11 @@
+@import 'mixins';
+
 .brands {
   width: 100vw;
   height: auto;
 
   &__name {
-    width: 100%;
-    height: auto;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    background-color: rgba(255, 255, 255, 1);
-    color: rgba(126, 126, 130, 1);
-    padding: 16px;
-    box-sizing: border-box;
-    border-top: 1px solid rgba(217, 255, 245, 1);
+    @include name;
   }
 
   &__swiper {
@@ -66,7 +59,7 @@
 }
 
 @media (min-width: 768px) {
-  .swiper-wrapper {
+  .brands__wrapper {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
@@ -96,7 +89,7 @@
     margin-left: 320px;
   }
 
-  .swiper-wrapper {
+  .brands__wrapper {
     grid-template-columns: repeat(4, 1fr);
   }
 

@@ -10,3 +10,20 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@mixin name {
+  width: 100%;
+  height: auto;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  background: linear-gradient(
+    to right,
+    rgba(248, 248, 248, 1),
+    rgba(255, 255, 255, 1)
+  );
+  color: rgba(126, 126, 130, 1);
+  padding: 16px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(217, 255, 245, 1);
+}
