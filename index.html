@@ -10,34 +10,395 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link href="style.css" rel="stylesheet"></head>
   <body>
-    
+    <header class="header">
+      <div class="header__tablet-left">
+        <button class="header__btn" id="menu" style="background-image: url(img/header/menu.png)"></button>
+
+        <div class="header__line header__line--tablet"></div>
+
+        <img id="logo" src="img/header/logo.png" alt="logo">
+      </div>
+
+      <div class="header__tablet-right">
+        <section class="header__box-name">
+          <span class="header__line-left"></span>
+          <h1 class="header__name">Услуги и сервисы</h1>
+        </section>
+
+        <button class="header__btn header__btn--tablet" id="openPhone" style="background-image: url(img/header/phone.png)"></button>
+
+        <button class="header__btn header__btn--tablet" id="openMessage">
+          <i class="fas fa-comment header__message"></i>
+        </button>
+
+        <button class="header__btn header__btn--tablet" style="background-image: url(img/header/user.png)"></button>
+
+        <div class="header__line"></div>
+
+        <section class="header__btn-right">
+          <button class="header__box-btn">
+            <span class="header__note" style="margin-right: 10px">
+              Статус ремонта
+            </span>
+
+            <span class="header__btn" style="background-image: url(img/header/tools.png)"></span>
+          </button>
+
+          <button class="header__box-btn">
+            <span class="header__note" style="margin-right: 10px">
+              Статус ремонта
+            </span>
+            <span class="header__btn" style="background-image: url(img/header/search.png)"></span>
+          </button>
+        </section>
+      </div>
+    </header>
+
+    <section class="topbar">
+      <div class="topbar__header">
+        <span class="topbar__line"></span>
+        <h2 class="topbar__name">Услуги и сервисы</h2>
+      </div>
+
+      <div class="topbar__navigation">
+        <nav class="topbar__nav">
+          <a class="topbar__btn" autofocus href="#">Ремонтируемые устройства</a>
+          <a class="topbar__btn" href="#">Ремонтируемые бренды</a>
+          <a class="topbar__btn" href="#">Цены на услуги</a>
+          <a class="topbar__btn" href="#">Адреса сервисных центров</a>
+          <a class="topbar__btn" href="#">Специальные цены</a>
+          <a class="topbar__btn" href="#">Отзывы</a>
+        </nav>
+
+        <div class="topbar__mask"></div>
+      </div>
+    </section>
+
+    <section class="info">
+      <section class="info__text">
+        <p class="info__description">
+          Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+          Только у нас вы можете отремонтировать свой ноутбук Dell с официальной
+          гарантией производителя.<br>
+          <span class="info__second">
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного
+            партнера, что подтверждает большое количество постоянных клиентов.
+            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+            очередь, советуют нас родным и близким.
+          </span>
+        </p>
+
+        <button id="infoRead" class="info__read">
+          <img class="info__icon" src="img/info/icon.png" alt="icon">Читать
+          далее
+        </button>
+      </section>
+
+      <img class="info__logo" src="img/info/logo.png" alt="logo">
+    </section>
+
+    <section class="menu" id="menuFog">
+      <div class="menu-box" id="menuBox">
+        <header class="menu__header">
+          <button class="menu__btn menu--close" id="closeMenu">
+            <ion-icon class="menu--icon" name="close"></ion-icon>
+          </button>
+
+          <img id="logo" class="menu__logo" src="img/header/logo.png" alt="logo">
+
+          <button class="menu__btn menu--search">
+            <ion-icon class="menu--icon" name="search"></ion-icon>
+          </button>
+        </header>
+
+        <nav>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Ремонт техники</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Услуги и сервисы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Корпоративным клиентам</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Продавцам техники</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Партнерам</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Производителям</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Наши сервисные центры</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="menu__details">
+          <button class="menu__btn menu__btn-margin" id="phone" style="background-image: url(img/header/phone.png)"></button>
+
+          <button class="menu__btn menu__btn-margin" id="message">
+            <i class="fas fa-comment header__message"></i>
+          </button>
+
+          <button class="menu__btn menu__btn-margin" style="background-image: url(img/header/user.png)"></button>
+        </div>
+
+        <p class="menu__contact">mail@cps.com</p>
+
+        <h3 class="menu__contact">8 800 890 8900</h3>
+
+        <section class="menu__lang">
+          <button class="menu__lang-btn" id="langRU">RU</button>
+          <button class="menu__lang-btn" id="langEN">EN</button>
+          <button class="menu__lang-btn" id="langCH">CH</button>
+        </section>
+      </div>
+    </section>
+
+    <section class="message" id="messageFog">
+      <div class="message-box" id="messageBox">
+        <button class="message__btn message__btn--mobul" id="closeMessage">
+          <ion-icon class="message--icon" name="close"></ion-icon>
+        </button>
+
+        <section class="message__box-name">
+          <span class="message__line"></span>
+          <h2 class="message__name">Услуги и сервисы</h2>
+        </section>
+
+        <input class="message__pole" type="text" name="name" placeholder="Имя">
+        <input class="message__pole" type="tel" name="tel" placeholder="Телефон">
+        <input class="message__pole" type="email" name="email" placeholder="Электронная почта">
+        <textarea class="message__pole message--text" name="sms" placeholder="Сообщение"></textarea>
+
+        <p class="message__consent">
+          Нажимая “отправить”, вы даете согласие на
+          <span class="message__color">обработку персональных данных</span> и
+          соглашаетесь с нашей
+          <span class="message__color">политикой конфиденциальности</span>
+        </p>
+
+        <div class="message__box-submit">
+          <button class="message__submit">
+            ОТПРАВИТЬ
+            <ion-icon class="message__arrow" name="arrow-dropright"></ion-icon>
+          </button>
+        </div>
+      </div>
+
+      <button class="message__btn message__btn--desktop" id="closeMessageDesktop">
+        <ion-icon class="message--icon" name="close"></ion-icon>
+      </button>
+    </section>
+
+    <section class="phone" id="phoneFog">
+      <div class="phone-box" id="phoneBox">
+        <button class="phone__btn phone__btn--mobul" id="closePhone">
+          <ion-icon class="phone--icon" name="close"></ion-icon>
+        </button>
+
+        <section class="phone__box-name">
+          <span class="phone__line"></span>
+          <h2 class="phone__name">Заказать звонок</h2>
+        </section>
+
+        <input class="phone__pole" type="tel" name="tel" placeholder="Телефон">
+
+        <p class="phone__consent">
+          Нажимая “отправить”, вы даете согласие на
+          <span class="phone__color">обработку персональных данных</span> и
+          соглашаетесь с нашей
+          <span class="phone__color">политикой конфиденциальности</span>
+        </p>
+
+        <div class="phone__box-submit">
+          <button class="phone__submit">
+            ОТПРАВИТЬ
+            <ion-icon class="phone__arrow" name="arrow-dropright"></ion-icon>
+          </button>
+        </div>
+      </div>
+
+      <button class="phone__btn phone__btn--desktop" id="closePhoneDesktop">
+        <ion-icon class="phone--icon" name="close"></ion-icon>
+      </button>
+    </section>
+
+    <section class="brands">
+      <h1 class="brands__name">Ремонт техники различных брендов</h1>
+
+      <div class="swiper-container brands__swiper">
+        <div class="swiper-wrapper brands__wrapper">
+          <div class="swiper-slide brands__slide">
+            <img class="brands__logo" src="img/brands/lenovo.png" alt="lenovo">
+            <img class="brands__btn" src="img/brands/go.png" alt="btn-next">
+          </div>
+          <div class="swiper-slide brands__slide">
+            <img class="brands__logo" src="img/brands/samsung.png" alt="samsung">
+            <img class="brands__btn" src="img/brands/go.png" alt="btn-next">
+          </div>
+          <div class="swiper-slide brands__slide">
+            <img class="brands__logo" src="img/brands/apple.png" alt="apple">
+            <img class="brands__btn" src="img/brands/go.png" alt="btn-next">
+          </div>
+          <div class="swiper-slide brands__slide">
+            <img class="brands__logo" src="img/brands/bosch.png" alt="bosch">
+            <img class="brands__btn" src="img/brands/go.png" alt="btn-next">
+          </div>
+          <div class="swiper-slide brands__slide">
+            <img class="brands__logo" src="img/brands/viewsonic.png" alt="viewsonic">
+            <img class="brands__btn" src="img/brands/go.png" alt="btn-next">
+          </div>
+          <div class="swiper-slide brands__slide">
+            <img class="brands__logo" src="img/brands/hp.png" alt="hp">
+            <img class="brands__btn" src="img/brands/go.png" alt="btn-next">
+          </div>
+          <div class="swiper-slide brands__slide">
+            <img class="brands__logo" src="img/brands/acer.png" alt="acer">
+            <img class="brands__btn" src="img/brands/go.png" alt="btn-next">
+          </div>
+          <div class="swiper-slide brands__slide">
+            <img class="brands__logo" src="img/brands/sony.svg" alt="sony">
+            <img class="brands__btn" src="img/brands/go.png" alt="btn-next">
+          </div>
+          <div class="swiper-slide brands__slide">
+            <img class="brands__logo" src="img/brands/lenovo.png" alt="lenovo">
+            <img class="brands__btn" src="img/brands/go.png" alt="btn-next">
+          </div>
+          <div class="swiper-slide brands__slide">
+            <img class="brands__logo" src="img/brands/samsung.png" alt="samsung">
+            <img class="brands__btn" src="img/brands/go.png" alt="btn-next">
+          </div>
+          <div class="swiper-slide brands__slide">
+            <img class="brands__logo" src="img/brands/apple.png" alt="apple">
+            <img class="brands__btn" src="img/brands/go.png" alt="btn-next">
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="brands__info">
+          <div class="brands__icon">
+            <img src="img/brands/icon.png" alt="icon">
+          </div>
+
+          <button id="all-logo" class="brands__toggle">Показать все</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="repair">
+      <h1 class="repair__name">Ремонт различных видов техники</h1>
+
+      <div class="swiper-container repair__swiper">
+        <div class="swiper-wrapper repair__wrapper">
+          <div class="swiper-slide repair__slide">
+            <p>Ремонт ноутбуков</p>
+            <img class="repair__btn" src="img/brands/go.png" alt="btn-next">
+          </div>
+          <div class="swiper-slide repair__slide">
+            <p>Ремонт планшетов</p>
+            <img class="repair__btn" src="img/brands/go.png" alt="btn-next">
+          </div>
+          <div class="swiper-slide repair__slide">
+            <p>Ремонт ПК </p>
+            <img class="repair__btn" src="img/brands/go.png" alt="btn-next">
+          </div>
+          <div class="swiper-slide repair__slide">
+            <p>Ремонт мониторов </p>
+            <img class="repair__btn" src="img/brands/go.png" alt="btn-next">
+          </div>
+          <div class="swiper-slide repair__slide">
+            <p>Ремонт ноутбуков</p>
+            <img class="repair__btn" src="img/brands/go.png" alt="btn-next">
+          </div>
+          <div class="swiper-slide repair__slide">
+            <p>Ремонт планшетов</p>
+            <img class="repair__btn" src="img/brands/go.png" alt="btn-next">
+          </div>
+          <div class="swiper-slide repair__slide">
+            <p>Ремонт ПК </p>
+            <img class="repair__btn" src="img/brands/go.png" alt="btn-next">
+          </div>
+          <div class="swiper-slide repair__slide">
+            <p>Ремонт мониторов </p>
+            <img class="repair__btn" src="img/brands/go.png" alt="btn-next">
+          </div>
+          <div class="swiper-slide repair__slide">
+            <p>Ремонт ноутбуков</p>
+            <img class="repair__btn" src="img/brands/go.png" alt="btn-next">
+          </div>
+          <div class="swiper-slide repair__slide">
+            <p>Ремонт планшетов</p>
+            <img class="repair__btn" src="img/brands/go.png" alt="btn-next">
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="repair__info">
+          <div class="repair__icon">
+            <img src="img/brands/icon.png" alt="icon">
+          </div>
+
+          <button id="all-repair" class="repair__toggle">Показать все</button>
+        </div>
+      </div>
+    </section>
 
     <section class="price">
       <h1 class="price__name">Цены на услуги</h1>
 
-      <div class="swiper-container price__swiper">
-        <div class="swiper-wrapper price__wrapper">
+      <div class="swiper-container price--swiper">
+        <div class="swiper-wrapper price--wrapper">
           <div class="price__title">
             <div class="price__service">Ремонтные услуги</div>
             <div class="price__rate">Цена</div>
             <div class="price__duration">Срок</div>
           </div>
-
-          <div class="swiper-slide price__slide">
+          <div class="swiper-slide price--slide price--border-top">
             <span class="price__item price--size1">
               <span class="price__highlight">Ремонтные услуги</span><br>
-              <p class="price__text">
-                Тестирование с выдачей технического заключения
-              </p>
+              <p class="price__text price--margin"> Диагностика</p>
             </span>
 
-            <span class="price__item price__margin price--size2">
-              <span class="price__highlight"> Цена</span><br>
-              <p class="price__cost">Бесплатно</p>
+            <span class="price__item price--size2">
+              <span class="price__highlight">Цена</span><br>
+              <p class="price__cost price--margin">Бесплатно</p>
             </span>
 
-            <span class="price__item price__margin price--size3">
-              <span class="price__highlight"> Срок</span><br>
+            <span class="price__item price--size3">
+              <span class="price__highlight">Срок</span><br>
+              <p class="price__time">30 мин</p>
+            </span>
+
+            <button class="price__submit">
+              Заказать
+              <ion-icon class="price__arrow" name="arrow-dropright"></ion-icon>
+            </button>
+
+            <div class="price__line"></div>
+          </div>
+          <div class="swiper-slide price--slide">
+            <span class="price__item price--size1">
+              <span class="price__highlight">Ремонтные услуги</span><br>
+              <p class="price__text price--margin"> Замена дисплея </p>
+            </span>
+
+            <span class="price__item price--size2">
+              <span class="price__highlight">Цена</span><br>
+              <p class="price__cost price--margin">1 000 ₽</p>
+            </span>
+
+            <span class="price__item price--size3">
+              <span class="price__highlight">Срок</span><br>
               <p class="price__time">30-120 мин</p>
             </span>
 
@@ -45,94 +406,76 @@
               Заказать
               <ion-icon class="price__arrow" name="arrow-dropright"></ion-icon>
             </button>
+
+            <div class="price__line"></div>
           </div>
-          
-          <div class="swiper-slide price__slide">
-            <span class="price__item">
+          <div class="swiper-slide price--slide">
+            <span class="price__item price--size1">
               <span class="price__highlight">Ремонтные услуги</span><br>
-              <p class="price__text">
-                Диагностика
-              </p>
-            </span>
-
-            <span class="price__item price__margin">
-              <span class="price__highlight"> Цена</span><br>
-              <p class="price__text">Бесплатно</p>
-            </span>
-
-            <p class="price__item price__margin">
-              <span class="price__highlight"> Срок</span><br>
-              </p><p class="price__text">30 мин</p>
-            <p></p>
-
-            <button class="price__submit">
-              Заказать
-              <ion-icon class="price__arrow" name="arrow-dropright"></ion-icon>
-            </button>
-          </div>
-          <div class="swiper-slide price__slide">
-            <span class="price__item">
-              <span class="price__highlight">Ремонтные услуги</span><br>
-              <p class="price__text">
-                Замена дисплея
-              </p>
-            </span>
-
-            <span class="price__item price__margin">
-              <span class="price__highlight"> Цена</span><br>
-              <p class="price__text">1 000 ₽</p>
-            </span>
-
-            <p class="price__item price__margin">
-              <span class="price__highlight"> Срок</span><br>
-              </p><p class="price__text">30-120 мин</p>
-            <p></p>
-
-            <button class="price__submit">
-              Заказать
-              <ion-icon class="price__arrow" name="arrow-dropright"></ion-icon>
-            </button>
-          </div>
-          <div class="swiper-slide price__slide">
-            <span class="price__item">
-              <span class="price__highlight">Ремонтные услуги</span><br>
-              <p class="price__text">
+              <p class="price__text price--margin">
                 Замена полифонического динамика
               </p>
             </span>
 
-            <span class="price__item price__margin">
+            <span class="price__item price--size2">
               <span class="price__highlight">Цена</span><br>
-              <p class="price__text">1 000 ₽</p>
+              <p class="price__cost price--margin">1 000 ₽</p>
             </span>
 
-            <p class="price__item price__margin">
-              <span class="price__highlight"> Срок</span><br>
-              </p><p class="price__text">30-120 мин</p>
-            <p></p>
+            <span class="price__item price--size3">
+              <span class="price__highlight">Срок</span><br>
+              <p class="price__time">30-120 мин</p>
+            </span>
 
             <button class="price__submit">
               Заказать
               <ion-icon class="price__arrow" name="arrow-dropright"></ion-icon>
             </button>
+
+            <div class="price__line"></div>
           </div>
-          <div class="swiper-slide price__slide">
-            <span class="price__item">
+          <div class="swiper-slide price--slide">
+            <span class="price__item price--size1">
               <span class="price__highlight">Ремонтные услуги</span><br>
-              <p class="price__text">
+              <p class="price__text price--margin">
+                Тестирование с выдачей технического заключения
+              </p>
+            </span>
+
+            <span class="price__item price--size2">
+              <span class="price__highlight">Цена</span><br>
+              <p class="price__cost price--margin">1 000 ₽</p>
+            </span>
+
+            <span class="price__item price--size3">
+              <span class="price__highlight">Срок</span><br>
+              <p class="price__time">30-120 мин</p>
+            </span>
+
+            <button class="price__submit">
+              Заказать
+              <ion-icon class="price__arrow" name="arrow-dropright"></ion-icon>
+            </button>
+
+            <div class="price__line"></div>
+          </div>
+          <div class="swiper-slide price--slide price--border-bottom">
+            <span class="price__item price--size1">
+              <span class="price__highlight">Ремонтные услуги</span><br>
+              <p class="price__text price--margin">
                 Замена программного обеспечения
               </p>
             </span>
 
-            <span class="price__item price__margin">
+            <span class="price__item price--size2">
               <span class="price__highlight">Цена</span><br>
-              <p class="price__text">1 000 ₽</p>
+              <p class="price__cost price--margin">1 000 ₽</p>
             </span>
 
-            <p class="price__item price__margin">
-              <span class="price__highlight"> Срок</span><br>
-              </p><p class="price__text">30-120 мин</p>
-            <p></p>
+            <span class="price__item price--size3">
+              <span class="price__highlight">Срок</span><br>
+              <p class="price__time">30-120 мин</p>
+            </span>
 
             <button class="price__submit">
               Заказать
