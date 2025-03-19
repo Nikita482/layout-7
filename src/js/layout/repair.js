@@ -1,16 +1,9 @@
-export function brands() {
-  new Swiper('.brands__swiper', {
+export function repair() {
+  new Swiper('.repair__swiper', {
     slidesPerView: 1.2,
     spaceBetween: 10,
-    on: {
-      init: function () {
-        document.querySelectorAll('.swiper-slide').forEach((slide) => {
-          slide.style.height = '72px'
-        })
-      }
-    },
     navigation: {
-      nextEl: '.brands__btn'
+      nextEl: '.repair__btn'
     },
     pagination: {
       el: '.swiper-pagination',
@@ -28,20 +21,20 @@ export function brands() {
   })
 
   let active = true
-  const logo = document.getElementById('all-logo')
-  logo.innerText = 'Показать все'
+  const repair = document.getElementById('all-repair')
+  repair.innerText = 'Показать все'
 
-  logo.addEventListener('click', () => {
-    const slides = document.querySelectorAll('.brands__slide:nth-child(n + 7)')
-    const slides7 = document.querySelectorAll('.brands__slide:nth-child(7)')
-    const slides8 = document.querySelectorAll('.brands__slide:nth-child(8)')
+  repair.addEventListener('click', () => {
+    const slides = document.querySelectorAll('.repair__slide:nth-child(n + 7)')
+    const slides7 = document.querySelectorAll('.repair__slide:nth-child(7)')
+    const slides8 = document.querySelectorAll('.repair__slide:nth-child(8)')
 
     if (active) {
       slides.forEach((slide) => {
         slide.style.display = 'flex'
       })
 
-      logo.innerText = 'Скрыть'
+      repair.innerText = 'Скрыть'
 
       active = !active
     } else {
@@ -58,7 +51,7 @@ export function brands() {
         })
       }
 
-      logo.innerText = 'Показать все'
+      repair.innerText = 'Показать все'
 
       active = !active
     }

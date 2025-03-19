@@ -6,6 +6,7 @@ import { lang } from './layout/menu'
 import { message } from './layout/messageEvents'
 import { phoneEvents } from './layout/phoneEvents'
 import { brands } from './layout/brands'
+import { repair } from './layout/repair'
 
 info()
 menu()
@@ -14,3 +15,4 @@ lang()
 message()
 phoneEvents()
 brands()
+repair()

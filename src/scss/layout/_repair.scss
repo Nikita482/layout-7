@@ -1,4 +1,4 @@
-.brands {
+.repair {
   width: 100vw;
   height: auto;
 
@@ -23,6 +23,7 @@
   }
 
   &__slide {
+    height: 160px !important;
     border-radius: 6px;
     border: 1px solid rgba(234, 234, 234, 1);
     background-color: rgba(255, 255, 255, 1);
@@ -31,17 +32,10 @@
     position: relative;
   }
 
-  &__logo {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
   &__btn {
     position: absolute;
     right: 16px;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 16px;
   }
 
   &__info {
@@ -72,26 +66,26 @@
     gap: 16px;
   }
 
-  .swiper-slide {
+  .repair__slide {
     width: 100% !important;
   }
 
-  .swiper-slide:nth-child(n + 7),
+  .repair__slide:nth-child(n + 7),
   .swiper-pagination {
     display: none;
   }
 
-  .brands__btn {
+  .repair__btn {
     pointer-events: none;
   }
 
-  .brands__info {
+  .repair__info {
     display: flex !important;
   }
 }
 
 @media (min-width: 1120px) {
-  .brands {
+  .repair {
     width: calc(100vw - 320px);
     margin-left: 320px;
   }
@@ -100,8 +94,8 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .swiper-slide:nth-child(7),
-  .swiper-slide:nth-child(8) {
+  .repair__slide:nth-child(7),
+  .repair__slide:nth-child(8) {
     display: flex;
   }
 }
