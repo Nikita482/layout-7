@@ -702,15 +702,58 @@ body {
   .phone-box {
     width: 440px; } }
 
-.brands {
-  width: 100vw;
-  height: 900px;
-  background-color: blue; }
+h1 {
+  width: 100%;
+  height: auto;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  background-color: white;
+  color: #7e7e82;
+  padding: 16px;
+  box-sizing: border-box; }
 
-@media (min-width: 1120px) {
-  .brands {
-    width: calc(100vw - 320px);
-    margin-left: 320px; } }
+.swiper-container {
+  overflow: hidden;
+  position: relative;
+  padding: 16px 16px 32px;
+  box-sizing: border-box; }
+
+.swiper-slide {
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+  background-color: white;
+  padding: 16px;
+  box-sizing: border-box;
+  position: relative; }
+
+.brands__logo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.brands__btn {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.brands__info {
+  display: none; }
+
+.brands__icon {
+  width: 24;
+  height: 24;
+  margin-right: 9px; }
+
+.brands__toggle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  background-color: transparent;
+  border: none;
+  color: #1b1c21; }
 
 
 /*# sourceMappingURL=style.css.map*/
