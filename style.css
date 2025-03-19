@@ -702,5 +702,15 @@ body {
   .phone-box {
     width: 440px; } }
 
+.brands {
+  width: 100vw;
+  height: 500px;
+  background-color: blue; }
+
+@media (min-width: 1120px) {
+  .brands {
+    width: calc(100vw - 320px);
+    margin-left: 320px; } }
+
 
 /*# sourceMappingURL=style.css.map*/
