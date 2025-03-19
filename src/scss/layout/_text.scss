@@ -1,0 +1,28 @@
+.text {
+  max-width: 420px;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.text p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: rgba(27, 28, 33, 1);
+}
+
+.text h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: rgba(27, 28, 33, 1);
+  margin-top: 10px;
+}
+
+@media (min-width: 1120px) {
+  .text {
+    margin-left: 320px;
+  }
+}
