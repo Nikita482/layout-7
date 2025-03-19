@@ -9,8 +9,7 @@ module.exports = {
 
   // Выходной файл
   output: {
-    filename: './js/bundle.js',
-    publicPath: '/'
+    filename: './js/bundle.js'
   },
 
   // Source maps для удобства отладки
