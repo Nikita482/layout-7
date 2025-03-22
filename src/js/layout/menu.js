@@ -53,7 +53,7 @@ export function lang() {
   })
 
   function resetColors() {
-    langRU.style.color = '' // сбрасываем цвет
+    langRU.style.color = ''
     langEN.style.color = ''
     langCH.style.color = ''
   }

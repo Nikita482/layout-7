@@ -83,6 +83,10 @@ $bg-line: #eaeaea;
     background-position: center;
   }
 
+  &__btn--menu {
+    background-image: url(../img/header/menu.png);
+  }
+
   &__btn-right {
     width: 100%;
     display: flex;
@@ -116,6 +120,14 @@ $bg-line: #eaeaea;
   &__note,
   &__name {
     display: none;
+  }
+
+  &__note {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: right;
   }
 
   &__btn-description {

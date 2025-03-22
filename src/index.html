@@ -2,10 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>last layot webcore</title>
     <link
@@ -19,12 +17,14 @@
     />
   </head>
   <body>
+    <!-- не понял правку "У topbar__navigation и у свайперов с обеих сторон нужно добавить градиент" -->
+
     <header class="header">
       <div class="header__tablet-left">
         <button
-          class="header__btn"
+          class="header__btn header__btn--menu"
           id="menu"
-          style="background-image: url(img/header/menu.png)"
+          style="background-image: url(./header/menu.png)"
         ></button>
 
         <div class="header__line header__line--tablet"></div>
@@ -124,14 +124,14 @@
     </section>
 
     <section class="menu" id="menuFog">
-      <div class="menu-box" id="menuBox">
+      <div class="menu__box" id="menuBox">
         <header class="menu__header">
           <button class="menu__btn menu--close" id="closeMenu">
             <ion-icon class="menu--icon" name="close"></ion-icon>
           </button>
 
           <img
-            id="logo"
+            id="logo2"
             class="menu__logo"
             src="img/header/logo.png"
             alt="logo"
@@ -173,17 +173,17 @@
 
         <div class="menu__details">
           <button
-            class="menu__btn menu__btn-margin"
+            class="menu__btn"
             id="phone"
             style="background-image: url(img/header/phone.png)"
           ></button>
 
-          <button class="menu__btn menu__btn-margin" id="message">
+          <button class="menu__btn" id="message">
             <i class="fas fa-comment header__message"></i>
           </button>
 
           <button
-            class="menu__btn menu__btn-margin"
+            class="menu__btn"
             style="background-image: url(img/header/user.png)"
           ></button>
         </div>
@@ -297,7 +297,7 @@
     </section>
 
     <section class="brands">
-      <h1 class="brands__name">Ремонт техники различных брендов</h1>
+      <h2 class="brands__name">Ремонт техники различных брендов</h2>
 
       <div class="swiper-container brands__swiper">
         <div class="swiper-wrapper brands__wrapper">
@@ -380,7 +380,7 @@
     </section>
 
     <section class="repair">
-      <h1 class="repair__name">Ремонт различных видов техники</h1>
+      <h2 class="repair__name">Ремонт различных видов техники</h2>
 
       <div class="swiper-container repair__swiper">
         <div class="swiper-wrapper repair__wrapper">
@@ -439,7 +439,7 @@
     </section>
 
     <section class="price">
-      <h1 class="price__name">Цены на услуги</h1>
+      <h2 class="price__name">Цены на услуги</h2>
 
       <div class="swiper-container price--swiper">
         <div class="swiper-wrapper price--wrapper">
@@ -449,20 +449,20 @@
             <div class="price__duration">Срок</div>
           </div>
           <div class="swiper-slide price--slide price--border-top">
-            <span class="price__item price--size1">
+            <div class="price__item price--size1">
               <span class="price__highlight">Ремонтные услуги</span><br />
-              <p class="price__text price--margin"> Диагностика</p>
-            </span>
+              <p class="price__text price--margin">Диагностика</p>
+            </div>
 
-            <span class="price__item price--size2">
+            <div class="price__item price--size2">
               <span class="price__highlight">Цена</span><br />
               <p class="price__cost price--margin">Бесплатно</p>
-            </span>
+            </div>
 
-            <span class="price__item price--size3">
+            <div class="price__item price--size3">
               <span class="price__highlight">Срок</span><br />
               <p class="price__time">30 мин</p>
-            </span>
+            </div>
 
             <button class="price__submit">
               Заказать
@@ -472,20 +472,20 @@
             <div class="price__line"></div>
           </div>
           <div class="swiper-slide price--slide">
-            <span class="price__item price--size1">
+            <div class="price__item price--size1">
               <span class="price__highlight">Ремонтные услуги</span><br />
               <p class="price__text price--margin"> Замена дисплея </p>
-            </span>
+            </div>
 
-            <span class="price__item price--size2">
+            <div class="price__item price--size2">
               <span class="price__highlight">Цена</span><br />
               <p class="price__cost price--margin">1 000 ₽</p>
-            </span>
+            </div>
 
-            <span class="price__item price--size3">
+            <div class="price__item price--size3">
               <span class="price__highlight">Срок</span><br />
               <p class="price__time">30-120 мин</p>
-            </span>
+            </div>
 
             <button class="price__submit">
               Заказать
@@ -495,22 +495,22 @@
             <div class="price__line"></div>
           </div>
           <div class="swiper-slide price--slide">
-            <span class="price__item price--size1">
+            <div class="price__item price--size1">
               <span class="price__highlight">Ремонтные услуги</span><br />
               <p class="price__text price--margin">
                 Замена полифонического динамика
               </p>
-            </span>
+            </div>
 
-            <span class="price__item price--size2">
+            <div class="price__item price--size2">
               <span class="price__highlight">Цена</span><br />
               <p class="price__cost price--margin">1 000 ₽</p>
-            </span>
+            </div>
 
-            <span class="price__item price--size3">
+            <div class="price__item price--size3">
               <span class="price__highlight">Срок</span><br />
               <p class="price__time">30-120 мин</p>
-            </span>
+            </div>
 
             <button class="price__submit">
               Заказать
@@ -520,22 +520,22 @@
             <div class="price__line"></div>
           </div>
           <div class="swiper-slide price--slide">
-            <span class="price__item price--size1">
+            <div class="price__item price--size1">
               <span class="price__highlight">Ремонтные услуги</span><br />
               <p class="price__text price--margin">
                 Тестирование с выдачей технического заключения
               </p>
-            </span>
+            </div>
 
-            <span class="price__item price--size2">
+            <div class="price__item price--size2">
               <span class="price__highlight">Цена</span><br />
               <p class="price__cost price--margin">1 000 ₽</p>
-            </span>
+            </div>
 
-            <span class="price__item price--size3">
+            <div class="price__item price--size3">
               <span class="price__highlight">Срок</span><br />
               <p class="price__time">30-120 мин</p>
-            </span>
+            </div>
 
             <button class="price__submit">
               Заказать
@@ -545,22 +545,22 @@
             <div class="price__line"></div>
           </div>
           <div class="swiper-slide price--slide price--border-bottom">
-            <span class="price__item price--size1">
+            <div class="price__item price--size1">
               <span class="price__highlight">Ремонтные услуги</span><br />
               <p class="price__text price--margin">
                 Замена программного обеспечения
               </p>
-            </span>
+            </div>
 
-            <span class="price__item price--size2">
+            <div class="price__item price--size2">
               <span class="price__highlight">Цена</span><br />
               <p class="price__cost price--margin">1 000 ₽</p>
-            </span>
+            </div>
 
-            <span class="price__item price--size3">
+            <div class="price__item price--size3">
               <span class="price__highlight">Срок</span><br />
               <p class="price__time">30-120 мин</p>
-            </span>
+            </div>
 
             <button class="price__submit">
               Заказать
@@ -586,10 +586,10 @@
     </section>
 
     <footer class="footer">
-      <span class="footer__text">
+      <div class="footer__text">
         <p>© 2019 CPS</p>
         <p>Разработано командой Apesong</p>
-      </span>
+      </div>
       <a class="footer__text footer--link" href="#">
         Политика конфиденциальности
       </a>
@@ -601,6 +601,6 @@
 
     <div style="width: 100vw; height: 40px"> </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/ionicons@4.1.2/dist/	ionicons.js"></script>
+    <script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
   </body>
 </html>

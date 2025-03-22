@@ -11,14 +11,14 @@
   transition-duration: 300ms;
   z-index: 2;
 
-  .menu-box {
+  .menu__box {
     width: 320px;
     height: 100vh;
     overflow-y: auto;
     background-color: rgba(255, 255, 255, 1);
     position: fixed;
     top: 0;
-    left: -320px;
+    left: -360px;
     transition-duration: 300ms;
     pointer-events: auto;
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
@@ -105,7 +105,7 @@
       @include btn-nav;
     }
 
-    .menu__btn-margin {
+    .menu__details .menu__btn {
       margin-left: 16px;
       color: white;
       font-size: 20px;
@@ -122,15 +122,16 @@
       margin: 16px 0 12px 16px;
       transition-duration: 300ms;
       color: rgba(27, 28, 33, 1);
+      margin-bottom: 100px;
     }
 
     .menu__contact {
-      color: rgba(27, 28, 33, 1);
+      color: rgba(27, 28, 33, 1) !important;
     }
   }
 }
 @media (min-width: 360px) {
-  .menu-box {
+  .menu__box {
     width: 360px;
   }
 }
@@ -144,7 +145,7 @@
     margin: 0;
   }
 
-  .menu-box {
+  .menu__box {
     width: 320px;
     height: 100% !important;
     left: 0 !important;

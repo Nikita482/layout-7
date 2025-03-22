@@ -7,7 +7,7 @@ const body = document.body
 
 export function message() {
   document.getElementById('message').addEventListener('click', () => {
-    menuBox.style.left = '-450px'
+    menuBox.style.left = '-360px'
     menuFog.style.backgroundColor = 'rgba(255, 255, 255, 0)'
     menuFog.style.pointerEvents = 'none'
     setTimeout(() => {
