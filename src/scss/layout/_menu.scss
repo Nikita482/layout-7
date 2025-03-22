@@ -9,7 +9,7 @@
   top: 0;
   pointer-events: none;
   transition-duration: 300ms;
-  z-index: 2;
+  z-index: 100;
 
   .menu__box {
     width: 320px;
@@ -59,7 +59,7 @@
     .menu__item {
       width: auto;
       height: 24px;
-      margin-bottom: 32px;
+      margin-bottom: 16px;
       padding: 0 24px;
       position: relative;
     }
@@ -67,11 +67,13 @@
     .menu__link {
       color: rgba(27, 28, 33, 1);
       text-decoration: none;
-      font-size: 16px;
-      letter-spacing: -0.2;
-      transition-duration: 200ms;
       display: block;
       outline: none;
+      font-family: 'TTLakes', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
     }
 
     .menu__item::before {
@@ -86,7 +88,6 @@
       transform-origin: left center;
       pointer-events: none;
       opacity: 0;
-      transition-duration: 200ms;
     }
 
     .menu__link:focus {
@@ -105,29 +106,50 @@
       @include btn-nav;
     }
 
-    .menu__details .menu__btn {
+    .menu__details .button-red {
       margin-left: 16px;
       color: white;
       font-size: 20px;
-      margin-top: 250px;
     }
 
     .menu__contact {
-      padding: 16px 0 12px 16px;
+      padding: 10px 0 10px 16px;
+      color: rgba(27, 28, 33, 1) !important;
+      font-family: 'TTLakes', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+    }
+
+    .menu__contact--font {
+      font-family: 'TTLakes', sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: -0.6px;
     }
 
     .menu__lang-btn {
       background-color: rgba(255, 255, 255, 1);
       border: none;
-      margin: 16px 0 12px 16px;
-      transition-duration: 300ms;
+      margin: 10px 0 10px 16px;
       color: rgba(27, 28, 33, 1);
-      margin-bottom: 100px;
+      margin-bottom: 10px;
+      font-family: 'TTLakes', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
     }
+  }
 
-    .menu__contact {
-      color: rgba(27, 28, 33, 1) !important;
-    }
+  .menu__btn--user {
+    background-image: url('../img/header/user.png');
+  }
+
+  .menu__btn--phone {
+    background-image: url('../img/header/phone.png');
   }
 }
 @media (min-width: 360px) {
@@ -163,5 +185,13 @@
 
   .menu__logo {
     margin-left: 0 !important;
+  }
+
+  .menu__details {
+    margin-top: 250px;
+  }
+
+  .menu__lang {
+    margin-top: 20px;
   }
 }

@@ -9,7 +9,7 @@
   position: fixed;
   top: 0;
   transition-duration: 300ms;
-  z-index: 10;
+  z-index: 100;
 
   &-box {
     width: 320px;
@@ -24,12 +24,11 @@
     border: 1px solid rgba(217, 255, 245, 1);
   }
 
-  &__btn {
-    @include btn-nav;
+  .button-red {
     margin: 24px 0 0 16px;
   }
 
-  &__btn--desktop {
+  .message__btn--desktop {
     display: none;
   }
 
@@ -57,8 +56,10 @@
 
   &__name {
     color: #1b1c21;
-    font-size: 28px;
-    line-height: 40px;
+    font-family: 'TTLakes', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
     letter-spacing: -0.6px;
   }
 
@@ -69,6 +70,11 @@
     margin: 0 auto 16px;
     border: 1px solid rgba(234, 234, 234, 1);
     border-radius: 8px;
+    font-family: 'TTLakes', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
   }
 
   &--text {
@@ -81,6 +87,7 @@
   }
 
   &__consent {
+    font-family: 'TTLakes', sans-serif;
     padding: 0 16px;
     font-weight: 500;
     font-size: 14px;
@@ -112,6 +119,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    font-family: 'TTLakes', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    text-align: right;
+    text-transform: uppercase;
   }
 
   &__arrow {
@@ -126,7 +141,7 @@
 
 @media (min-width: 1440px) {
   .message__btn--mobul {
-    display: none;
+    display: none !important;
   }
 
   .message__btn--desktop {
@@ -135,7 +150,7 @@
     background-color: #ff3e79;
     border-radius: 50%;
     border: none;
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat;

@@ -84,7 +84,23 @@ $bg-line: #eaeaea;
   }
 
   &__btn--menu {
-    background-image: url(../img/header/menu.png);
+    background-image: url('../img/header/menu.png');
+  }
+
+  &__btn--phone {
+    background-image: url('../img/header/phone.png');
+  }
+
+  &__btn--user {
+    background-image: url('../img/header/user.png');
+  }
+
+  &__btn--tools {
+    background-image: url('../img/header/tools.png');
+  }
+
+  &__btn--search {
+    background-image: url('../img/header/search.png');
   }
 
   &__btn-right {
@@ -115,7 +131,7 @@ $bg-line: #eaeaea;
 
   &__line--tablet,
   &__btn-description,
-  &__btn--tablet,
+  .header__btn--tablet,
   &__line-left,
   &__note,
   &__name {
@@ -123,11 +139,13 @@ $bg-line: #eaeaea;
   }
 
   &__note {
+    font-family: 'TTLakes', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
     text-align: right;
+    margin-right: 10px;
   }
 
   &__btn-description {
@@ -145,7 +163,9 @@ $bg-line: #eaeaea;
   }
 
   &__name {
+    font-family: 'TTLakes', sans-serif;
     color: #1b1c21;
+    font-weight: 700;
     font-size: 28px;
     line-height: 40px;
     letter-spacing: -0.6px;
@@ -163,7 +183,7 @@ $bg-line: #eaeaea;
 
   .header__line--tablet,
   .header__btn--tablet {
-    display: flex;
+    display: flex !important;
   }
 
   .header__tablet-left {
@@ -203,7 +223,7 @@ $bg-line: #eaeaea;
   .main__name--mobile-tablet,
   .main__header,
   .main__description--margin {
-    display: none;
+    display: none !important;
   }
 
   .header__name,

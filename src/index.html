@@ -21,11 +21,7 @@
 
     <header class="header">
       <div class="header__tablet-left">
-        <button
-          class="header__btn header__btn--menu"
-          id="menu"
-          style="background-image: url(./header/menu.png)"
-        ></button>
+        <button class="button-red header__btn--menu" id="menu"></button>
 
         <div class="header__line header__line--tablet"></div>
 
@@ -39,42 +35,29 @@
         </section>
 
         <button
-          class="header__btn header__btn--tablet"
+          class="button-red header__btn--tablet header__btn--phone"
           id="openPhone"
-          style="background-image: url(img/header/phone.png)"
         ></button>
 
-        <button class="header__btn header__btn--tablet" id="openMessage">
+        <button class="button-red header__btn--tablet" id="openMessage">
           <i class="fas fa-comment header__message"></i>
         </button>
 
         <button
-          class="header__btn header__btn--tablet"
-          style="background-image: url(img/header/user.png)"
+          class="button-red header__btn--tablet header__btn--user"
         ></button>
 
         <div class="header__line"></div>
 
         <section class="header__btn-right">
           <button class="header__box-btn">
-            <span class="header__note" style="margin-right: 10px">
-              Статус ремонта
-            </span>
-
-            <span
-              class="header__btn"
-              style="background-image: url(img/header/tools.png)"
-            ></span>
+            <span class="header__note"> Статус ремонта </span>
+            <span class="button-red header__btn--tools"></span>
           </button>
 
           <button class="header__box-btn">
-            <span class="header__note" style="margin-right: 10px">
-              Статус ремонта
-            </span>
-            <span
-              class="header__btn"
-              style="background-image: url(img/header/search.png)"
-            ></span>
+            <span class="header__note"> Статус ремонта </span>
+            <span class="button-red header__btn--search"></span>
           </button>
         </section>
       </div>
@@ -115,8 +98,8 @@
         </p>
 
         <button id="infoRead" class="info__read">
-          <img class="info__icon" src="img/info/icon.png" alt="icon" />Читать
-          далее
+          <img class="info__icon" src="img/info/icon.png" alt="icon" />
+          Читать далее
         </button>
       </section>
 
@@ -126,7 +109,7 @@
     <section class="menu" id="menuFog">
       <div class="menu__box" id="menuBox">
         <header class="menu__header">
-          <button class="menu__btn menu--close" id="closeMenu">
+          <button class="button-red menu--close" id="closeMenu">
             <ion-icon class="menu--icon" name="close"></ion-icon>
           </button>
 
@@ -137,7 +120,7 @@
             alt="logo"
           />
 
-          <button class="menu__btn menu--search">
+          <button class="button-red menu--search">
             <ion-icon class="menu--icon" name="search"></ion-icon>
           </button>
         </header>
@@ -172,25 +155,18 @@
         </nav>
 
         <div class="menu__details">
-          <button
-            class="menu__btn"
-            id="phone"
-            style="background-image: url(img/header/phone.png)"
-          ></button>
+          <button class="button-red menu__btn--phone" id="phone"></button>
 
-          <button class="menu__btn" id="message">
+          <button class="button-red" id="message">
             <i class="fas fa-comment header__message"></i>
           </button>
 
-          <button
-            class="menu__btn"
-            style="background-image: url(img/header/user.png)"
-          ></button>
+          <button class="button-red menu__btn--user"></button>
         </div>
 
         <p class="menu__contact">mail@cps.com</p>
 
-        <h3 class="menu__contact">8 800 890 8900</h3>
+        <h3 class="menu__contact menu__contact--font">8 800 890 8900</h3>
 
         <section class="menu__lang">
           <button class="menu__lang-btn" id="langRU">RU</button>
@@ -202,7 +178,7 @@
 
     <section class="message" id="messageFog">
       <div class="message-box" id="messageBox">
-        <button class="message__btn message__btn--mobul" id="closeMessage">
+        <button class="button-red message__btn--mobul" id="closeMessage">
           <ion-icon class="message--icon" name="close"></ion-icon>
         </button>
 
@@ -250,17 +226,14 @@
         </div>
       </div>
 
-      <button
-        class="message__btn message__btn--desktop"
-        id="closeMessageDesktop"
-      >
+      <button class="button-red message__btn--desktop" id="closeMessageDesktop">
         <ion-icon class="message--icon" name="close"></ion-icon>
       </button>
     </section>
 
     <section class="phone" id="phoneFog">
       <div class="phone-box" id="phoneBox">
-        <button class="phone__btn phone__btn--mobul" id="closePhone">
+        <button class="button-red phone__btn--mobul" id="closePhone">
           <ion-icon class="phone--icon" name="close"></ion-icon>
         </button>
 
@@ -275,7 +248,6 @@
           name="tel"
           placeholder="Телефон"
         />
-
         <p class="phone__consent">
           Нажимая “отправить”, вы даете согласие на
           <span class="phone__color">обработку персональных данных</span> и
@@ -291,7 +263,7 @@
         </div>
       </div>
 
-      <button class="phone__btn phone__btn--desktop" id="closePhoneDesktop">
+      <button class="button-red phone__btn--desktop" id="closePhoneDesktop">
         <ion-icon class="phone--icon" name="close"></ion-icon>
       </button>
     </section>
@@ -307,7 +279,7 @@
               src="img/brands/lenovo.png"
               alt="lenovo"
             />
-            <img class="brands__btn" src="img/brands/go.png" alt="btn-next" />
+            <button class="brands__btn"></button>
           </div>
           <div class="swiper-slide brands__slide">
             <img
@@ -315,15 +287,15 @@
               src="img/brands/samsung.png"
               alt="samsung"
             />
-            <img class="brands__btn" src="img/brands/go.png" alt="btn-next" />
+            <button class="brands__btn"></button>
           </div>
           <div class="swiper-slide brands__slide">
             <img class="brands__logo" src="img/brands/apple.png" alt="apple" />
-            <img class="brands__btn" src="img/brands/go.png" alt="btn-next" />
+            <button class="brands__btn"></button>
           </div>
           <div class="swiper-slide brands__slide">
             <img class="brands__logo" src="img/brands/bosch.png" alt="bosch" />
-            <img class="brands__btn" src="img/brands/go.png" alt="btn-next" />
+            <button class="brands__btn"></button>
           </div>
           <div class="swiper-slide brands__slide">
             <img
@@ -331,19 +303,19 @@
               src="img/brands/viewsonic.png"
               alt="viewsonic"
             />
-            <img class="brands__btn" src="img/brands/go.png" alt="btn-next" />
+            <button class="brands__btn"></button>
           </div>
           <div class="swiper-slide brands__slide">
             <img class="brands__logo" src="img/brands/hp.png" alt="hp" />
-            <img class="brands__btn" src="img/brands/go.png" alt="btn-next" />
+            <button class="brands__btn"></button>
           </div>
           <div class="swiper-slide brands__slide">
             <img class="brands__logo" src="img/brands/acer.png" alt="acer" />
-            <img class="brands__btn" src="img/brands/go.png" alt="btn-next" />
+            <button class="brands__btn"></button>
           </div>
           <div class="swiper-slide brands__slide">
             <img class="brands__logo" src="img/brands/sony.svg" alt="sony" />
-            <img class="brands__btn" src="img/brands/go.png" alt="btn-next" />
+            <button class="brands__btn"></button>
           </div>
           <div class="swiper-slide brands__slide">
             <img
@@ -351,7 +323,7 @@
               src="img/brands/lenovo.png"
               alt="lenovo"
             />
-            <img class="brands__btn" src="img/brands/go.png" alt="btn-next" />
+            <button class="brands__btn"></button>
           </div>
           <div class="swiper-slide brands__slide">
             <img
@@ -359,11 +331,11 @@
               src="img/brands/samsung.png"
               alt="samsung"
             />
-            <img class="brands__btn" src="img/brands/go.png" alt="btn-next" />
+            <button class="brands__btn"></button>
           </div>
           <div class="swiper-slide brands__slide">
             <img class="brands__logo" src="img/brands/apple.png" alt="apple" />
-            <img class="brands__btn" src="img/brands/go.png" alt="btn-next" />
+            <button class="brands__btn"></button>
           </div>
         </div>
 
@@ -385,44 +357,44 @@
       <div class="swiper-container repair__swiper">
         <div class="swiper-wrapper repair__wrapper">
           <div class="swiper-slide repair__slide">
-            <p>Ремонт ноутбуков</p>
-            <img class="repair__btn" src="img/brands/go.png" alt="btn-next" />
+            <p class="repair__text">Ремонт ноутбуков</p>
+            <button class="repair__btn"></button>
           </div>
           <div class="swiper-slide repair__slide">
-            <p>Ремонт планшетов</p>
-            <img class="repair__btn" src="img/brands/go.png" alt="btn-next" />
+            <p class="repair__text">Ремонт планшетов</p>
+            <button class="repair__btn"></button>
           </div>
           <div class="swiper-slide repair__slide">
-            <p>Ремонт ПК </p>
-            <img class="repair__btn" src="img/brands/go.png" alt="btn-next" />
+            <p class="repair__text">Ремонт ПК </p>
+            <button class="repair__btn"></button>
           </div>
           <div class="swiper-slide repair__slide">
-            <p>Ремонт мониторов </p>
-            <img class="repair__btn" src="img/brands/go.png" alt="btn-next" />
+            <p class="repair__text">Ремонт мониторов </p>
+            <button class="repair__btn"></button>
           </div>
           <div class="swiper-slide repair__slide">
-            <p>Ремонт ноутбуков</p>
-            <img class="repair__btn" src="img/brands/go.png" alt="btn-next" />
+            <p class="repair__text">Ремонт ноутбуков</p>
+            <button class="repair__btn"></button>
           </div>
           <div class="swiper-slide repair__slide">
-            <p>Ремонт планшетов</p>
-            <img class="repair__btn" src="img/brands/go.png" alt="btn-next" />
+            <p class="repair__text">Ремонт планшетов</p>
+            <button class="repair__btn"></button>
           </div>
           <div class="swiper-slide repair__slide">
-            <p>Ремонт ПК </p>
-            <img class="repair__btn" src="img/brands/go.png" alt="btn-next" />
+            <p class="repair__text">Ремонт ПК </p>
+            <button class="repair__btn"></button>
           </div>
           <div class="swiper-slide repair__slide">
-            <p>Ремонт мониторов </p>
-            <img class="repair__btn" src="img/brands/go.png" alt="btn-next" />
+            <p class="repair__text">Ремонт мониторов </p>
+            <button class="repair__btn"></button>
           </div>
           <div class="swiper-slide repair__slide">
-            <p>Ремонт ноутбуков</p>
-            <img class="repair__btn" src="img/brands/go.png" alt="btn-next" />
+            <p class="repair__text">Ремонт ноутбуков</p>
+            <button class="repair__btn"></button>
           </div>
           <div class="swiper-slide repair__slide">
-            <p>Ремонт планшетов</p>
-            <img class="repair__btn" src="img/brands/go.png" alt="btn-next" />
+            <p class="repair__text">Ремонт планшетов</p>
+            <button class="repair__btn"></button>
           </div>
         </div>
 
@@ -599,7 +571,6 @@
       </a>
     </footer>
 
-    <div style="width: 100vw; height: 40px"> </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
   </body>
